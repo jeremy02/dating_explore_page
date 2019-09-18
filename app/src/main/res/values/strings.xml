@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">DateMatch</string>
+    <string name="app_name">Date-Match</string>
 
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
