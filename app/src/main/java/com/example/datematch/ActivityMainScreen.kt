@@ -3,6 +3,9 @@ package com.example.datematch
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.view.WindowManager
 import androidx.core.content.ContextCompat
@@ -22,7 +25,7 @@ class ActivityMainScreen : AppCompatActivity() {
         };
 
         setContentView(R.layout.activity_main_screen)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.hide()
 
         // Delayed display of UI elements
         supportActionBar?.hide()
@@ -35,4 +38,5 @@ class ActivityMainScreen : AppCompatActivity() {
             window.setStatusBarColor(ContextCompat.getColor(this,android.R.color.white))
         }
     }
+
 }

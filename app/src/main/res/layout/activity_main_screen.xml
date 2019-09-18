@@ -1,18 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-     xmlns:app="http://schemas.android.com/apk/res-auto"
-     xmlns:tools="http://schemas.android.com/tools"
-     android:layout_width="match_parent"
-     android:layout_height="match_parent"
-     android:fitsSystemWindows="true"
-     tools:context=".ActivityMainScreen"
-     android:background="@android:color/white">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:fitsSystemWindows="true"
+	tools:context=".ActivityMainScreen"
+	android:background="@android:color/white"
+	tools:ignore="HardcodedText,ContentDescription">
+	
+	<LinearLayout
+		android:id="@+id/top_view"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:padding="16dp">
+	
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Discover"
+			android:textSize="28sp"
+			android:textStyle="bold"
+			android:layout_weight="1"
+			android:textColor="@android:color/black"/>
+		
+		<ImageButton
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_gravity="bottom"
+			android:src="@drawable/ic_filter"
+			android:background="@android:color/transparent"/>
+	
+	</LinearLayout>
+	
+	<LinearLayout
+		android:id="@+id/card_view_layout"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:orientation="horizontal"
+		android:background="@color/colorPrimary">
+		
+	</LinearLayout>
+	
+	<com.google.android.material.bottomnavigation.BottomNavigationView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:menu="@menu/bottom_nav"
+		app:itemIconTint="@android:color/black"
+		android:background="@android:color/transparent">
+		
+	</com.google.android.material.bottomnavigation.BottomNavigationView>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/white">
-
-    </RelativeLayout>
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>
