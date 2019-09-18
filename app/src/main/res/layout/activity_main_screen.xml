@@ -15,7 +15,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:orientation="horizontal"
-		android:padding="16dp">
+		android:padding="@dimen/spacing_large">
 	
 		<TextView
 			android:layout_width="0dp"
@@ -41,7 +41,14 @@
 		android:layout_height="0dp"
 		android:layout_weight="1"
 		android:orientation="horizontal"
-		android:background="@color/colorPrimary">
+		android:background="@android:color/transparent">
+		
+		<com.yuyakaido.android.cardstackview.CardStackView
+			android:id="@+id/card_stack_view"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:clipToPadding="false"
+			android:padding="@dimen/spacing_large"/>
 		
 	</LinearLayout>
 	
@@ -49,10 +56,8 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		app:menu="@menu/bottom_nav"
-		app:itemIconTint="@android:color/black"
 		app:itemIconSize="24dp"
-		android:background="@android:color/transparent">
-		
-	</com.google.android.material.bottomnavigation.BottomNavigationView>
+		app:itemIconTint="@android:color/black"
+		android:background="@android:color/transparent"/>
 
 </LinearLayout>
