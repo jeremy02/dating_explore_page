@@ -58,15 +58,11 @@ class ActivityMainScreen : AppCompatActivity() , CardStackListener {
     }
 
     private fun setupCardStackView() {
-        initialize()
-    }
-
-    private fun initialize() {
         manager.setStackFrom(StackFrom.Bottom)
         manager.setVisibleCount(3)
-        manager.setTranslationInterval(16.0f)
+        manager.setTranslationInterval(8.0f)
         manager.setScaleInterval(0.95f)
-        manager.setSwipeThreshold(0.1f)
+        manager.setSwipeThreshold(0.3f)
         manager.setMaxDegree(-45.0f)
         manager.setDirections(Direction.HORIZONTAL)
         manager.setCanScrollHorizontal(true)
