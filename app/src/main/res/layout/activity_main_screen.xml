@@ -48,7 +48,10 @@
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:clipToPadding="false"
-			android:padding="@dimen/spacing_large"/>
+			android:paddingTop="@dimen/spacing_xlarge"
+			android:paddingLeft="@dimen/spacing_large"
+			android:paddingRight="@dimen/spacing_large"
+			android:paddingBottom="@dimen/spacing_xlarge"/>
 		
 	</LinearLayout>
 	
@@ -57,6 +60,7 @@
 		android:layout_height="wrap_content"
 		app:menu="@menu/bottom_nav"
 		app:itemIconSize="24dp"
+		android:layout_marginTop="@dimen/spacing_large"
 		app:itemIconTint="@android:color/black"
 		android:background="@android:color/transparent"/>
 
