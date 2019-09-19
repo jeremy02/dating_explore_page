@@ -80,16 +80,16 @@ class ActivityMainScreen : AppCompatActivity() , CardStackListener {
 
     private fun createUsers(): List<Users> {
         val users = ArrayList<Users>()
-        users.add(Users(name = "Kathryn Diaz", city = "Kyoto", url = "https://source.unsplash.com/NYyCqdBOKwc/600x800"))
-        users.add(Users(name = "Amanda Seyfried", city = "Kyoto", url = "https://m.media-amazon.com/images/M/MV5BMjUyODkwODUyMF5BMl5BanBnXkFtZTcwMzU3MjYxMw@@._V1_UY317_CR33,0,214,317_AL_.jpg"))
-        users.add(Users(name = "Missy Peregrym", city = "Kyoto", url = "https://source.unsplash.com/buF62ewDLcQ/600x800"))
-        users.add(Users(name = "Rachel McAdams", city = "New York", url = "https://source.unsplash.com/THozNzxEP3g/600x800"))
-        users.add(Users(name = "Shantel VanSanten", city = "New York", url = "https://source.unsplash.com/USrZRcRS2Lw/600x800"))
-        users.add(Users(name = "Natalie Portman", city = "New York", url = "https://source.unsplash.com/PeFk7fzxTdk/600x800"))
-        users.add(Users(name = "Sophia Bush", city = "Paris", url = "https://source.unsplash.com/LrMWHKqilUw/600x800"))
-        users.add(Users(name = "Jessica Lowndes", city = "Paris", url = "https://source.unsplash.com/HN-5Z6AmxrM/600x800"))
-        users.add(Users(name = "Michelle Monaghan", city = "London", url = "https://source.unsplash.com/CdVAUADdqEc/600x800"))
-        users.add(Users(name = "Nelly Furtado", city = "China", url = "https://source.unsplash.com/AWh9C-QjhE4/600x800"))
+        users.add(Users(name = "Milan Kunis", city = "Japan,Kyoto", url = "https://m.media-amazon.com/images/M/MV5BODQyNTQyNzY4MV5BMl5BanBnXkFtZTcwODg5MDA3MQ@@._V1_UY317_CR25,0,214,317_AL_.jpg"))
+        users.add(Users(name = "Amanda Seyfried", city = "Canada, Montreal", url = "https://m.media-amazon.com/images/M/MV5BMjUyODkwODUyMF5BMl5BanBnXkFtZTcwMzU3MjYxMw@@._V1_UY317_CR33,0,214,317_AL_.jpg"))
+        users.add(Users(name = "Missy Peregrym", city = "Australia, Adelaide", url = "https://m.media-amazon.com/images/M/MV5BMTQyNzExNzQ1N15BMl5BanBnXkFtZTcwNjk0NDAyMw@@._V1_UY317_CR17,0,214,317_AL_.jpg"))
+        users.add(Users(name = "Rachel McAdams", city = "USA, New Jersey", url = "https://m.media-amazon.com/images/M/MV5BMTY5ODcxMDU4NV5BMl5BanBnXkFtZTcwMjAzNjQyNQ@@._V1_UY209_CR2,0,140,209_AL_.jpg"))
+        users.add(Users(name = "Shantel VanSanten", city = "Ukraine, Dnipro", url = "https://m.media-amazon.com/images/M/MV5BMzk4NjFhYWItODg5OC00MmM1LTljMzItNDBjOWYzMTdiNjVjXkEyXkFqcGdeQXVyMTQxMTcxNzc@._V1_UX140_CR0,0,140,209_AL_.jpg"))
+        users.add(Users(name = "Natalie Portman", city = "USA, New York", url = "https://m.media-amazon.com/images/M/MV5BMTQ3ODE3Mjg1NV5BMl5BanBnXkFtZTcwNzA4ODcxNA@@._V1_UY209_CR8,0,140,209_AL_.jpg"))
+        users.add(Users(name = "Sophia Bush", city = "India, Bangladesh", url = "https://m.media-amazon.com/images/M/MV5BODI2MzM0MTkzM15BMl5BanBnXkFtZTgwMjQxMzgwNTM@._V1_UY209_CR10,0,140,209_AL_.jpg"))
+        users.add(Users(name = "Jessica Lowndes", city = "France, Saint Ettiene", url = "https://m.media-amazon.com/images/M/MV5BOTY2M2I1OTgtYWI5Zi00Mjc1LWI5MDQtNmYzMWM4Y2ExMTNkXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX140_CR0,0,140,209_AL_.jpg"))
+        users.add(Users(name = "Michelle Monaghan", city = "London, WestHam", url = "https://m.media-amazon.com/images/M/MV5BNzEwYTdjNjYtZDk4NC00YzFmLTlkZTQtNTQyZTg3YmIxYWIxL2ltYWdlXkEyXkFqcGdeQXVyNzg5MzIyOA@@._V1_UY209_CR13,0,140,209_AL_.jpg"))
+        users.add(Users(name = "Nelly Furtado", city = "China, Hongkong", url = "https://m.media-amazon.com/images/M/MV5BMTQ5OTMxMTMyOF5BMl5BanBnXkFtZTcwMzExMjQ4Mg@@._V1_UX140_CR0,0,140,209_AL_.jpg"))
         return users
     }
 

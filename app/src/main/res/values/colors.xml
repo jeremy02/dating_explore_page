@@ -24,4 +24,8 @@
 	<color name="md_red_A400">#ff2d6f</color>
 	<color name="md_red_A700">#e00032</color>
 	
+	<color name="grey_hard">#96989A</color>
+	<color name="grey_medium">#BDBFC1</color>
+	<color name="grey_soft">#F5F5F5</color>
+	
 </resources>

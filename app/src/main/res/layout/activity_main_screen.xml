@@ -26,11 +26,12 @@
 			android:textSize="28sp"
 			android:textStyle="bold"
 			android:layout_weight="1"
+			android:layout_gravity="bottom"
 			android:textColor="@android:color/black"/>
 		
 		<ImageButton
-			android:layout_width="24dp"
-			android:layout_height="24dp"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
 			android:layout_gravity="bottom"
 			android:src="@drawable/ic_filter"
 			android:background="@android:color/transparent"/>
