@@ -2,7 +2,6 @@ package com.yuyakaido.android.cardstackview.internal;
 
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.yuyakaido.android.cardstackview.CardStackLayoutManager;
 
 public class CardStackDataObserver extends RecyclerView.AdapterDataObserver {

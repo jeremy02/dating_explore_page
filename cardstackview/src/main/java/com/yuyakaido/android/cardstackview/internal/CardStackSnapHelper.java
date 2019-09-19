@@ -1,12 +1,10 @@
 package com.yuyakaido.android.cardstackview.internal;
 
 import android.view.View;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.SnapHelper;
-
 import com.yuyakaido.android.cardstackview.CardStackLayoutManager;
 import com.yuyakaido.android.cardstackview.Duration;
 import com.yuyakaido.android.cardstackview.SwipeAnimationSetting;

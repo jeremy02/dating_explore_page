@@ -2,12 +2,7 @@ package com.yuyakaido.android.cardstackview.internal;
 
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
-
-import com.yuyakaido.android.cardstackview.Direction;
-import com.yuyakaido.android.cardstackview.RewindAnimationSetting;
-import com.yuyakaido.android.cardstackview.StackFrom;
-import com.yuyakaido.android.cardstackview.SwipeAnimationSetting;
-import com.yuyakaido.android.cardstackview.SwipeableMethod;
+import com.yuyakaido.android.cardstackview.*;
 
 import java.util.List;
 

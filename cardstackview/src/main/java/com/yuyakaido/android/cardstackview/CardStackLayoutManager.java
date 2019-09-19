@@ -6,12 +6,10 @@ import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Interpolator;
-
 import androidx.annotation.FloatRange;
 import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.yuyakaido.android.cardstackview.internal.CardStackSetting;
 import com.yuyakaido.android.cardstackview.internal.CardStackSmoothScroller;
 import com.yuyakaido.android.cardstackview.internal.CardStackState;
@@ -458,8 +456,24 @@ public class CardStackLayoutManager
     }
 
     private void updateRotation(View view) {
-        float degree = state.dx * setting.maxDegree / getWidth() * state.proportion;
+
+        float degree = 0;
+
+        if(state.proportion >= 0.1){ // drag from the top positions
+            degree = state.dx * setting.maxDegree / getWidth() * -(1+state.proportion);
+        }else if(state.proportion <= -0.01){ // drag from the bottom positions
+            degree = state.dx * setting.maxDegree / getWidth() * -(1-state.proportion);
+        }else{ // drag from the other or middle positions
+            if(state.proportion >= 0.01){
+                degree = state.dx * setting.maxDegree / getWidth() * (-(1+state.proportion));
+            }else if(state.proportion >= -0.01 && state.proportion < 0.01){
+                degree = state.dx * setting.maxDegree / getWidth() * (-(1+state.proportion * 10));
+            }else{
+                degree = state.dx * setting.maxDegree / getWidth() * (-(1+state.proportion * 10));
+            }
+        }
         view.setRotation(degree);
+
     }
 
     private void resetRotation(View view) {

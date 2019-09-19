@@ -2,7 +2,6 @@ package com.yuyakaido.android.cardstackview;
 
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
-
 import com.yuyakaido.android.cardstackview.internal.AnimationSetting;
 
 public class RewindAnimationSetting implements AnimationSetting {
