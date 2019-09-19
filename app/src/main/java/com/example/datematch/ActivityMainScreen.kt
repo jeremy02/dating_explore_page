@@ -48,7 +48,7 @@ class ActivityMainScreen : AppCompatActivity() , CardStackListener {
 
     private fun createUsers(): List<Users> {
         val users = ArrayList<Users>()
-        users.add(Users(name = "Kathryn Diaz", city = "Kyoto", url = "https://source.unsplash.com/NYyCqdBOKwc/600x800"))
+        users.add(Users(name = "Kathryn Diaz", city = "Kyoto", url = "https://m.media-amazon.com/images/M/MV5BMTQ5OTMxMTMyOF5BMl5BanBnXkFtZTcwMzExMjQ4Mg@@._V1_.jpg"))
         users.add(Users(name = "Ramon Iglesias", city = "Kyoto", url = "https://source.unsplash.com/Xq1ntWruZQI/600x800"))
         users.add(Users(name = "Missy Peregrym", city = "Kyoto", url = "https://source.unsplash.com/buF62ewDLcQ/600x800"))
         users.add(Users(name = "Rachel McAdams", city = "New York", url = "https://source.unsplash.com/THozNzxEP3g/600x800"))
