@@ -1,23 +1,20 @@
 package com.example.datematch.adapters
 
+import android.os.Build
+import android.text.Html
+import android.text.SpannableString
+import android.text.Spanned
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.TextView.BufferType
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.datematch.R
 import com.example.datematch.models.Users
-import android.widget.TextView.BufferType
-import android.text.Html
-import android.os.Build
-import android.text.SpannableString
-import android.text.Spanned
-
-
-
 
 
 class CardStackAdapter(
@@ -31,11 +28,10 @@ class CardStackAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val user = users[position]
-        holder.name.text = "${user.name}"
+        holder.name.text = user.name
         holder.city.text = user.city
 
-        val text = "Cinema,<font color=\"#bdbdbd\">Photo,</font>Tattoo,<font color=\"#bdbdbd\">Bicycle,</font>Cooking"
-        holder.hobbies.setText(fromHtml(text), BufferType.SPANNABLE)
+        holder.hobbies.setText(fromHtml(user.hobbies), BufferType.SPANNABLE)
 
         // image
         Glide.with(holder.image)

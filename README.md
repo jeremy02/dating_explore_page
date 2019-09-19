@@ -21,4 +21,4 @@ The GIF below shows the inspiration concept of the app.
 As exposed on the inspiration video, there's all the design details also present in this app.
 
 ## Notes
-Still in progress
+Completed App with full functionality
