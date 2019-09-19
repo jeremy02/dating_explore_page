@@ -498,7 +498,10 @@ public class CardStackLayoutManager
             bottomOverlay.setAlpha(0.0f);
         }
         Direction direction = state.getDirection();
-        float alpha = setting.overlayInterpolator.getInterpolation(state.getRatio());
+
+        // default for updating color alpha
+//        float alpha = setting.overlayInterpolator.getInterpolation(state.getRatio());
+        float alpha = 0.6f;
         switch (direction) {
             case Left:
                 if (leftOverlay != null) {

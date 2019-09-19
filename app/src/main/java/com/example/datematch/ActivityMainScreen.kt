@@ -60,7 +60,7 @@ class ActivityMainScreen : AppCompatActivity() , CardStackListener {
     private fun setupCardStackView() {
         manager.setStackFrom(StackFrom.Bottom)
         manager.setVisibleCount(3)
-        manager.setTranslationInterval(8.0f)
+        manager.setTranslationInterval(12.0f)
         manager.setScaleInterval(0.95f)
         manager.setSwipeThreshold(0.3f)
         manager.setMaxDegree(-25.0f)
@@ -122,13 +122,13 @@ class ActivityMainScreen : AppCompatActivity() , CardStackListener {
     }
 
     override fun onCardAppeared(view: View, position: Int) {
-        val textView = view.findViewById<TextView>(R.id.item_name)
-        Log.e(TAG, "onCardAppeared: ($position) ${textView.text}")
+//        val textView = view.findViewById<TextView>(R.id.item_name)
+//        Log.e(TAG, "onCardAppeared: ($position) ${textView.text}")
     }
 
     override fun onCardDisappeared(view: View, position: Int) {
-        val textView = view.findViewById<TextView>(R.id.item_name)
-        Log.e(TAG, "onCardDisappeared: ($position) ${textView.text}")
+//        val textView = view.findViewById<TextView>(R.id.item_name)
+//        Log.e(TAG, "onCardDisappeared: ($position) ${textView.text}")
     }
 
 }

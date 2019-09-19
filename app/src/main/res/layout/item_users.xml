@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
+<RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="?attr/selectableItemBackground"
-	android:foreground="?attr/selectableItemBackground"
-	app:cardUseCompatPadding="true"
-	app:cardPreventCornerOverlap="false"
-	app:cardElevation="@dimen/spacing_xsmall"
-	app:cardCornerRadius="@dimen/spacing_xlarge"
-	app:cardBackgroundColor="@android:color/white"
-	tools:ignore="ContentDescription">
+	android:clipChildren="false"
+	app:elevation="@dimen/spacing_medium"
+	android:background="@drawable/layer_card_background">
 	
 	<!--Display Image and Content-->
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:orientation="vertical"
-		android:weightSum="10">
+		android:weightSum="10"
+		android:orientation="vertical">
 		
 		<androidx.cardview.widget.CardView
 			android:layout_width="match_parent"
 			android:layout_height="0dp"
-			android:layout_weight="8.5"
+			android:layout_weight="8"
+			app:cardElevation="0dp"
+			android:clipToPadding="false"
+			android:clipChildren="false"
+			app:cardUseCompatPadding="false"
+			app:cardPreventCornerOverlap="false"
 			app:cardCornerRadius="@dimen/spacing_xlarge"
-			android:layout_margin="@dimen/spacing_mmiddle">
+			android:layout_margin="@dimen/spacing_middle">
 			
 			<ImageView
 				android:id="@+id/item_image"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
-				android:scaleType="centerCrop"/>
+				android:scaleType="centerCrop"
+				tools:ignore="ContentDescription"/>
 			
 		</androidx.cardview.widget.CardView>
 		
@@ -40,17 +41,17 @@
 			android:orientation="vertical"
 			android:layout_width="match_parent"
 			android:layout_height="0dp"
+			android:layout_weight="2"
 			android:layout_gravity="bottom"
-			android:layout_weight="1.5"
-			android:padding="16dp"
-			android:background="@color/colorPrimary">
+			android:padding="@dimen/spacing_large"
+			android:background="@android:color/transparent">
 			
 			<TextView
 				android:id="@+id/item_name"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:textStyle="bold"
-				android:textColor="@android:color/white"
+				android:textColor="@android:color/black"
 				android:textSize="26sp"/>
 			
 			<TextView
@@ -58,7 +59,7 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:textStyle="bold"
-				android:textColor="@android:color/white"
+				android:textColor="@android:color/black"
 				android:textSize="20sp"/>
 		
 		</LinearLayout>
@@ -66,5 +67,78 @@
 	</LinearLayout>
 	<!--Display Image and Content-->
 	
-
-</androidx.cardview.widget.CardView>
+	<!--left_overlay image or background when we swipe left-->
+	<LinearLayout
+		android:id="@+id/left_overlay"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:weightSum="10"
+		android:orientation="vertical">
+		
+		<androidx.cardview.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="8"
+			app:cardCornerRadius="@dimen/spacing_xlarge"
+			android:layout_margin="@dimen/spacing_middle">
+			
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/md_red_200"/>
+		
+		</androidx.cardview.widget.CardView>
+		
+		<View
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="2"
+			android:layout_gravity="bottom"
+			android:background="@android:color/transparent"/>
+	
+	</LinearLayout>
+	
+	<!--left_overlay image or background when we swipe right-->
+	<LinearLayout
+		android:id="@+id/right_overlay"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:weightSum="10"
+		android:orientation="vertical">
+		
+		<androidx.cardview.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="8"
+			app:cardCornerRadius="@dimen/spacing_xlarge"
+			android:layout_margin="@dimen/spacing_middle">
+			
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/md_red_200"/>
+		
+		</androidx.cardview.widget.CardView>
+		
+		<View
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="2"
+			android:layout_gravity="bottom"
+			android:background="@android:color/transparent"/>
+	
+	</LinearLayout>
+	
+	<FrameLayout
+		android:id="@+id/top_overlay"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+	
+	<FrameLayout
+		android:id="@+id/bottom_overlay"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+	
+</RelativeLayout>

@@ -5,4 +5,23 @@
     <color name="colorAccent">#D81B60</color>
 
     <color name="black_overlay">#66000000</color>
+	
+	<!-- google's material design colours from
+  http://www.google.com/design/spec/style/color.html#color-ui-color-palette -->
+	<!--reds-->
+	<color name="md_red_50">#fde0dc</color>
+	<color name="md_red_100">#f9bdbb</color>
+	<color name="md_red_200">#f69988</color>
+	<color name="md_red_300">#f36c60</color>
+	<color name="md_red_400">#e84e40</color>
+	<color name="md_red_500">#e51c23</color>
+	<color name="md_red_600">#dd191d</color>
+	<color name="md_red_700">#d01716</color>
+	<color name="md_red_800">#c41411</color>
+	<color name="md_red_900">#b0120a</color>
+	<color name="md_red_A100">#ff7997</color>
+	<color name="md_red_A200">#ff5177</color>
+	<color name="md_red_A400">#ff2d6f</color>
+	<color name="md_red_A700">#e00032</color>
+	
 </resources>
