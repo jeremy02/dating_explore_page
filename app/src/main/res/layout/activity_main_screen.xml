@@ -63,7 +63,7 @@
 		android:layout_height="wrap_content"
 		app:menu="@menu/bottom_nav"
 		app:itemIconSize="24dp"
-		app:itemIconTint="@android:color/black"
+		app:itemIconTint="@color/tab_item_bg"
 		android:background="@android:color/transparent"/>
 
 </LinearLayout>
