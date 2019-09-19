@@ -40,7 +40,8 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.google.android.material:material:1.0.0'
 
-    implementation "com.yuyakaido.android:card-stack-view:2.3.4"
+    // the card-stack-view
+    implementation project(':cardstackview')
 
     // Images
     implementation 'com.github.bumptech.glide:glide:4.9.0'
